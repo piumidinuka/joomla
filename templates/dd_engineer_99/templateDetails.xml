@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" client="site" type="template" method="upgrade">
+  <name>dd_engineer_99</name>
+  <creationDate>2016-11-01</creationDate>
+  <version>1.0</version>
+ <author>DiabloDesign</author>
+  <authorUrl>http://diablodesign.eu</authorUrl>
+<authorUrl>http://www.diablodesign.eu</authorUrl>
+	<copyright>Copyright (C) DiabloDesign License All rights reserved.</copyright>
+	<version>1.0.0</version>
+
+  <description>
+	<![CDATA[
+		<style type="text/css" media="all">
+				<!--
+				h1 {clear:both;font-family: Georgia, sans-serif;font-size:36px;  font-weight: normal;}
+				h2 {clear:both;font-family: Georgia, sans-serif;font-size:20px;  font-weight: normal; }
+				-->
+			</style>
+
+	        <div class="dd-description clearfix">
+	        <h1><img src="http://diablodesign.eu/syg.png" /></a><span style="color: #cc0607;"> DD Engineer 99 free version</span></h1>
+	        <hr>
+			<div class="pull-left" style="max-width: 35.69%;">
+			<img style="max-width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 10px; background: #fff; border: 1px solid #e1e1e1;" src="../templates/dd_engineer_99/images/sc.jpg" />
+		
+		</div>
+		<div class="pull-left" style="max-width: 64.31%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 0 30px;">
+			<div style="margin-bottom: 20px;">
+				<div style="margin-bottom: 20px;">
+			<h2></a><span style="color: #009933;"> Demo version of template has limited access to administrator panel. Full version available after purchasing the license.<br />
+			You already tested the template and liked it ? <a href="http://www.diablodesign.eu" target="_blank" > Click here</a>.to purchase full version.</span></h2>
+			<br />
+			<h2></a><span style="color: #660033;"> Wersja demonstracyjna szablonu ma ograniczony panel administracyjny. Pełna wersja dostępna po kupieniu licencji.<br />
+			Przetestowałeś już szablon i Ci się spodobał ?  <a href="http://diablodesign.eu/formularz-zamowienia" target="_blank" > Kliknij tutaj</a>.aby kupić pełną wersję.</span></h2>
+			
+			
+			<div style="margin: 20px 0 0;">
+			
+
+				</div></div></div></div>
+	</div>
+	]]>
+	</description>
+  <files>
+    <file>CloudZoom.js</file>
+    <file>blank.png</file>
+    <file>bootstrap.min.js</file>
+    <file>component.php</file>
+    <file>error.php</file>
+    <file>functions-additional.php</file>
+    <file>functions.php</file>
+    <file>index.html</file>
+    <file>index.php</file>
+    <file>jquery.js</file>
+    <file>layout.core.js</file>
+    <file>layout.ie.css</file>
+    <file>layout.ie.js</file>
+    <file>modrender.php</file>
+    <file>script.js</file>
+    <file>style.ie.css</file>
+    <file>templateDetails.xml</file>
+    <file>virtuemart.js</file>
+    <folder>css</folder>
+    <folder>data</folder>
+    <folder>fields</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>includes</folder>
+    <folder>js</folder>
+    <folder>language</folder>
+    <folder>library</folder>
+    <folder>plugins</folder>
+    <folder>prototypes</folder>
+    <folder>templates</folder>
+  </files>
+  <positions>
+    <position>bottom-banner-1</position>
+    <position>breadcrumb</position>
+    <position>dd-footer-1</position>
+    <position>dd-footer-2</position>
+    <position>dd-footer-3</position>
+    <position>dd-footer-4</position>
+    <position>dd-footer-5</position>
+    <position>dd-footer-6</position>
+    <position>dd-footer-7</position>
+    <position>dd-top-1</position>
+    <position>dd-top-2</position>
+    <position>dd-top-3</position>
+    <position>dd-top-4</position>
+    <position>dd-top-5</position>
+    <position>dd-top-6</position>
+    <position>dd-top-7</position>
+    <position>footer-8</position>
+    <position>left</position>
+    <position>position-1</position>
+    <position>position-7</position>
+    <position>position-8</position>
+    <position>topbanner-1</position>
+  </positions>
+  <config>
+    <fields name="params" addfieldpath="/templates/dd_engineer_99/fields">
+       <fieldset name="logo" label="Logo">
+          <field type="spacer" class="text" label="...........................................LOGO......................................................." /> 
+          <field name="logoFile" default="templates/dd_engineer_99/images/designer/logo.png" type="media" label="TPL_LOGO_LABEL" description="TPL_LOGO_DESC"/>
+     
+      </fieldset>
+	  
+	  <fieldset name="license" label="License Key">
+           <field type="spacer" class="text" label="......................License.KEY..................................................................." />         
+           <field name="license" type="text" default="" size="50" label="License key" description="License key" disabled="false"/>         
+     </fieldset>
+	  	
+	 <fieldset name="analytics" label="Google analytics">
+          <field type="spacer" class="text" label="......................Google.Analytics..............................................................." />
+          <field name="analytics" type="text" default="UA-XXXXXXXX-1" size="50" label="tracking Id" disabled="false"/>
+		  
+		 <field name="ac" type="radio" default="0" class="btn-group" label="" description="test">
+					<option value="0">Disabled</option>
+				
+	      </field>         
+     </fieldset>
+
+
+	
+      <fieldset name="favicon" label="Favicon">  
+          <field type="spacer" class="text" label="...........................................FAVICON...................................................." />    
+          <field name="fav" type="media" label="Upload favicon" description="" default="templates/dd_engineer_99/images/designer/favicon.ico" />
+      </fieldset>
+	  
+	  <fieldset name="headercontact" label="Header contact">  
+          <field type="spacer" class="text" label="...........................................Telephone.................................................." />
+		 
+          <field name="hc2" type="text" label="Telephone" description="" default="+1 (555) 456 3890" disabled="false"/>
+		  <field name="hc3" type="text" label="e-mail" description="" default="info@company.com" disabled="false"/>
+		 
+		  <field type="spacer" class="text" label="...........................................Adress....................................................." />  
+		 
+          <field name="hc5" type="text" label="Adress line 1" description="" default="4934 Irving Place" disabled="false"/>
+		  <field name="hc6" type="text" label="Adress line 2" description="" default="Pond, MO 63040" disabled="false"/>
+		  <field type="spacer" class="text" label="...........................................Didable.Header.Contact....................................." />  
+		  <field name="hcl" type="radio" default="1" class="btn-group" label="" >
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+					
+				
+	      </field>  
+      </fieldset>
+	  <fieldset name="hotinfo" label="HOTINFO PRO">  
+	  	<field type="spacer" class="text" label="...........................................HOT.INFO..................................................." /> 
+		<field name="hin" type="text" default="HOT-INFO" size="50" label="Name HOT-INFO" disabled="false"/>
+		<field name="hi" type="text" default="Electric current used to track water in concrete :: Carnivorous plant inspires coating that fights biofouling on medical implants" size="50" label="HOT NEWS" disabled="false"/>
+		<field name="hil" type="text" default="" size="50" label="http:// " disabled="false"/>
+		<field name="speedh" type="text" default="3" size="50" label="speed hot info " disabled="false"/>
+			<field type="spacer" label="Disable HOT INFO " />
+			<field name="hic" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+		</fieldset>
+		<fieldset name="social" label="Social icon PRO"> 
+		
+		<field type="spacer" class="text" label="...........................................FACEBOOK................................................." />
+			<field name="facebook" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+				<field name="fc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+				<field type="spacer" class="text" label=".........................................TWITTER................................................." />
+            <field name="twitter" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+				<field name="tc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+			
+				<field type="spacer" class="text" label=".........................................GOOGLE+................................................." />
+			<field name="google" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+				<field name="gc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+					<field type="spacer" class="text" label=".........................................PINTEREST..........................................." />
+			<field name="pinterest" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+				<field name="pc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+				</fieldset>
+				 <fieldset name="slideshow" label="Slideshow PRO">
+		  
+		  <field type="spacer" class="text" label="...............................SLIDE.1................................................................" />	
+		  <field name="sf1" type="media" label="Upload photo " description="" default="templates/dd_engineer_99/images/slideshow/1.jpg"/>
+		  <field name="st1" type="text" default="EngineeR TEXT 1" label="Title" disabled="false"/>
+	
+	
+		  <field type="spacer" label="Disable slide 1 " />
+			 <field name="slide1" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>	
+		  
+		   <field type="spacer" class="text" label="...............................SLIDE.2................................................................" />	
+		  <field name="sf2" type="media" label="Upload photo " description="" default="templates/dd_engineer_99/images/slideshow/2.jpg"/>
+		  <field name="st2" type="text" default="EngineeR TEXT 2" label="Title" disabled="false"/>
+	
+		  	  <field type="spacer" label="Disable slide 2 " />
+			 <field name="slide2" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+		  
+		  <field type="spacer" class="text" label="...............................SLIDE.3................................................................" />	
+		  <field name="sf3" type="media" label="Upload photo " description="" default="templates/dd_engineer_99/images/slideshow/3.jpg"/>
+			  <field name="st3" type="text" default="EngineeR TEXT 3" label="Title" disabled="false"/>
+		
+	
+		  	  <field type="spacer" label="Disable slide 3 " />
+			 <field name="slide3" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					
+					</field>
+		  
+		  <field type="spacer" class="text" label="...............................SLIDE.4................................................................" />	
+		  <field name="sf4" type="media" label="Upload photo" description="" default="templates/dd_engineer_99/images/slideshow/4.jpg"/>
+		  <field name="st4" type="text" default="EngineeR TEXT 4" label="Title" disabled="false"/>
+
+	      
+		  	  <field type="spacer" label="Disable slide 4 " />
+			 <field name="slide4" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					
+					</field>
+		  
+		  <field type="spacer" class="text" label="...............................SLIDE.5................................................................" />	
+		  <field name="sf5" type="media" label="Upload photo " description="" default="templates/dd_engineer_99/images/slideshow/5.jpg"/>
+	 		  <field name="st5" type="text" default="EngineeR TEXT 5" label="Title" disabled="false"/>
+				
+	      
+
+		  <field type="spacer" label="Disable slide 5 " />
+		  <field name="slide5" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					
+					</field>
+		  <field type="spacer" class="text" label="..........................................Speed slideshow............................................." />   
+		  <field name="speed" type="text" default="4600" size="50"  label="Speed slideshow 0/ms " disabled="false"/>
+		  
+	
+		  <field type="spacer" label="Disable all text " />
+		  <field name="sllc" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>			
+		
+	  </fieldset>
+	  
+	  	   <fieldset name="news" label="News Box PRO">
+          <field type="spacer" class="text" label="......................News.1......................................................................." />
+		   <field name="n1" type="media" label="Upload photo " description="" default="templates/dd_engineer_99/images/news/1.jpg" />         
+           <field name="n2" type="text" default="SKILLED PROFESSIONALS." size="50" label="Title 1" />
+		   <field name="n2a" type="text" default="YOUR PROPERTY IN GOOD HANDS." size="50" label="Title 2" />
+		   <field name="n3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="n5" type="text" default="http://" size="50" label="http://" />
+		     
+		  <field type="spacer" class="text" label="......................News.2......................................................................." />
+		   <field name="n6" type="media" label="Upload photo " description="" default="templates/dd_engineer_99/images/news/2.jpg" />         
+           <field name="n7" type="text" default="EFFECTIVE PLANNING." size="50" label="Title 1"  />
+		   <field name="n7a" type="text" default="CONSTRUCTION PROCESS ORGANIZED" size="50" label="Title 2"  />
+		   <field name="n8" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="n10" type="text" default="http://" size="50" label="http://" />  
+		   
+		  <field type="spacer" class="text" label="......................News.3......................................................................." />
+		   <field name="n11" type="media" label="Upload photo " description="" default="templates/dd_engineer_99/images/news/3.jpg"/>         
+           <field name="n12" type="text" default="RISK MANAGEMENT." size="50" label="Title 1"  />
+		    <field name="n12a" type="text" default="WE HAVE GOT YOU COVERED." size="50" label="Title 2"  />
+		   <field name="n13" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="n15" type="text" default="http://" size="50" label="http://" /> 
+		   
+		   <field type="spacer" label="Disable News Box " />
+			 <field name="dnb" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>	
+		            
+     </fieldset>
+	     
+	  
+	    <fieldset name="stats" label="Stats BOX PRO">
+          <field type="spacer" class="text" label="......................STATS.BOX......................................................................." />
+		  <field name="s1" type="text" default="YEARS" size="50" label="Title" description="" disabled="false"/>
+		  <field name="sn1" type="text" default="30" size="50" label="Number" description="" disabled="false"/>
+		  
+          <field name="s2" type="text" default="PROJECTS" size="50" label="Title" description="" disabled="false"/>
+		  <field name="sn2" type="text" default="1234" size="50" label="Number" description="" disabled="false"/>
+		   
+		  <field name="s3" type="text" default="AWARDS" size="50" label="Title" description="" disabled="false"/> 
+		  <field name="sn3" type="text" default="121" size="50" label="Number" description="" disabled="false"/>
+		  
+		  <field name="s4" type="text" default="ABOUT CLIENTS" size="50" label="Title" description="" disabled="false"/>
+		  <field name="sn4" type="text" default="43679" size="50" label="Number" description="" disabled="false"/>
+		   
+		  <field type="spacer" label="Disable STATS BOX " />
+			 <field name="dsb" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>	   
+     </fieldset>
+	  <fieldset name="footer" label="Footer BOX PRO">
+	  <field type="spacer" class="text" label="......................Abouts..............................................................................." />
+	  <field name="a1" type="text" default="ABOUT US" size="50" label="Header Title" description="" disabled="false"/>
+	 <field name="a2" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+	  <field type="spacer" class="text" label="......................Information..............................................................................." />
+	  <field name="i1" type="text" default="INFORMATION" size="50" label="Header Title" description="" disabled="false"/>
+	 <field name="i2" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+          <field type="spacer" class="text" label="......................Links............................................................................" />
+		  <field name="l0" type="text" default="Links" size="50" label="Header Title" description="" disabled="false"/>
+		  <field name="l1" type="text" default="Home" size="50" label="Title" description="" disabled="false"/>
+		  <field name="l2" type="text" default="http://" size="50" label="http://" description="" disabled="false"/>
+		  <field name="l3" type="text" default="About" size="50" label="Title" description="" disabled="false"/>
+		  <field name="l4" type="text" default="http://" size="50" label="http://" description="" disabled="false"/>
+		  <field name="l5" type="text" default="Forum" size="50" label="Title" description="" disabled="false"/>
+		  <field name="l6" type="text" default="http://" size="50" label="http://" description="" disabled="false"/>
+		  <field name="l7" type="text" default="Fedback" size="50" label="Title" description="" disabled="false"/>
+          <field name="l8" type="text" default="http://" size="50" label="http://" description="" disabled="false"/>
+		   <field name="l9" type="text" default="Gallery" size="50" label="Title" description="" disabled="false"/>
+          <field name="l10" type="text" default="http://" size="50" label="http://" description="" disabled="false"/>
+		  
+		  <field type="spacer" class="text" label="......................Contact.Footer..................................................................." />
+		  <field name="f3" type="text" default="Visit Our Office" size="50" label="Title" description="" disabled="false"/>
+          <field name="f4" type="text" default="+1 (555) 456 3890" size="50" label="Telephone 1" description="" disabled="false"/>
+		  <field name="f5" type="text" default="+1 (555) 564 9354" size="50" label="Telephone 2" description="" disabled="false"/>
+		   
+		  <field name="f6" type="text" default="4934 Irving Place," size="50" label="Adress line 1" description="" disabled="false"/> 
+		  <field name="f7" type="text" default="Pond, MO 63040" size="50" label="Adress line 2" description="" disabled="false"/>
+		  
+		  <field name="f8" type="text" default="support@company.com " size="50" label="E-mail 1" description="" disabled="false"/>
+		  <field name="f9" type="text" default="www.company.com" size="50" label="website" description="" disabled="false"/>
+		  
+		            <field type="spacer" class="text" label="...........................................FOOTER......................................................." />    
+          <field name="footer1" type="text" default="Engineer" size="50" label="Site name" description="footer site name"/>
+		  
+		  <field type="spacer" label="Disable Foter " />
+			 <field name="dfb" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+						   
+     </fieldset>
+	 <fieldset name="maps" label="Google Map PRO">
+			<field type="spacer" class="text" label="...........................................Google.Maps.................................................." /> 
+            <field name="map1" type="text" default="Krakow" label="City" description="City" filter="string" />
+			<field name="map2" type="text" default="NowaHuta" label="Street" description="Street" filter="string" />
+			<field type="spacer" label="Disable Map" />
+			<field name="mc" type="radio" default="1" class="btn-group"  label="" description="map">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+					</fieldset>
+						   <fieldset name="design" label="Design BY PRO">
+           <field type="spacer" class="text" label="......................Disable.Design BY................................................................" />         
+            <field name="db" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+     </fieldset>
+    </fields>
+  </config>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.tpl_dd_engineer_99.ini</language>
+  </languages>
+</extension>
